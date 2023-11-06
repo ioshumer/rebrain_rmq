@@ -1,0 +1,31 @@
+POST http://0.0.0.0:15672/api/exchanges/%2F/x_headers/publish
+Authorization: Basic guest:guest
+
+{
+    "properties": {
+        "headers": {
+            "type": "sms",
+            "should-call": true
+        }
+    },
+    "routing_key": "",
+    "payload": "message",
+    "payload_encoding": "string"
+}
+
+
+# homework
+POST http://0.0.0.0:15671/api/exchanges/%2F/files_exchange/publish
+Authorization: Basic admin:ADMINadmin
+
+{
+    "properties": {
+        "headers": {
+            "type": "sms",
+            "should-call": true
+        }
+    },
+    "routing_key": "",
+    "payload": "message",
+    "payload_encoding": "string"
+}
